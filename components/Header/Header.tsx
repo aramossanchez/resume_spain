@@ -18,6 +18,7 @@ export default function Header() {
                         <div>Ciudadanos (C)</div>
                         <div>Unidas Podemos (UP)</div>
                         <div>Izquierda Unida (IU)</div>
+                        <div>Todos</div>
                     </div>
                 </div>
                 <div className={style.link_container}>

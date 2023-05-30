@@ -1,6 +1,16 @@
 export const news = 
 [
     {
+        'id': '0',
+        'title': 'Resultados de las Elecciones Municipales 2023',
+        'link': 'https://www.publico.es/resultados-elecciones/municipales/2023/',
+        'organizations': ['Todos'],
+        'date': '30/05/2023',
+        'tags': ['Elecciones'],
+        'media': 'Público',
+        'national': 'si'
+    },
+    {
         'id': '1',
         'title': 'Ayuso sube el precio de los comedores escolares en los colegios públicos y eleva el gasto diario de las familias a 5,50 euros',
         'link': 'https://www.publico.es/sociedad/ayuso-sube-precio-comedores-escolares-colegios-publicos-eleva-gasto-diario-familias-5-50-euros.html',
@@ -8,10 +18,6 @@ export const news =
         'provincia': 'Comunidad de Madrid',
         'date': '30/05/2023',
         'tags': ['Educación'],
-        'fakeNew': {
-            'state': 'no',
-            'link': ''
-        },
         'media': 'Público'
     },
     {
@@ -19,14 +25,49 @@ export const news =
         'title': 'Más de 10.000 niños se quedan sin plaza en las escuelas infantiles de Madrid un día después de las elecciones ',
         'link': 'https://www.eldiario.es/madrid/somos/miles-ninos-quedan-plaza-escuelas-infantiles-madrid-dia-despues-elecciones_1_10249261.html',
         'organizations': ['Partido Popular'],
-        'provincia': 'Comunidad de Madrid',
         'municipio': 'Madrid',
         'date': '30/05/2023',
         'tags': ['Educación'],
-        'fakeNew': {
-            'state': 'yes',
-            'link': '1'
-        },
         'media': 'elDiario.es'
-    }
+    },
+    {
+        'id': '3',
+        'title': 'El Gobierno reconoce los verdiales de Málaga como patrimonio inmaterial de la cultura en España',
+        'link': 'https://cadenaser.com/andalucia/2023/05/30/el-gobierno-reconoce-los-verdiales-de-malaga-como-patrimonio-inmaterial-de-la-cultura-en-espana-ser-malaga/',
+        'organizations': ['Partido Socialista Obrero Español'],
+        'date': '30/05/2023',
+        'tags': ['Medio ambiente'],
+        'media': 'Cadena SER',
+        'national': 'si'
+    },
+    {
+        'id': '4',
+        'title': 'Sánchez se reúne en Moncloa con el administrador de la NASA y firma la adhesión de España al programa Artemis',
+        'link': 'https://www.europapress.es/nacional/noticia-sanchez-reune-moncloa-administrador-nasa-firma-adhesion-espana-programa-artemis-20230530165501.html?utm_campaign=smartclip_social&utm_medium=Social&utm_source=Twitter',
+        'organizations': ['Partido Socialista Obrero Español'],
+        'date': '30/05/2023',
+        'tags': ['Ciencia'],
+        'media': 'europa press',
+        'national': 'si'
+    },
+    {
+        'id': '5',
+        'title': 'Sanidad da luz verde a una alternativa a la quimioterapia intravenosa en el cáncer de mama',
+        'link': 'https://www.abc.es/salud/sanidad-luz-verde-alternativa-quimioterapia-intravenosa-cancer-20230530164902-nt.html#vca=rrss&vmc=abc-es&vso=tw&vli=cm-general&_tcode=d3RwMGoy',
+        'organizations': ['Partido Socialista Obrero Español'],
+        'date': '30/05/2023',
+        'tags': ['Sanidad'],
+        'media': 'ABC',
+        'national': 'si'
+    },
+    {
+        'id': '6',
+        'title': 'Dimite el número tres del PSOE andaluz y secretario de Organización, Noel López, por el caso Maracena',
+        'link': 'https://www.rtve.es/noticias/20230530/secretario-organizacion-psoe-andaluz-dimite-defenderse-caso-maracena/2447985.shtml',
+        'organizations': ['Partido Socialista Obrero Español'],
+        'date': '30/05/2023',
+        'tags': ['Casos de corrupción política'],
+        'media': 'RTVE',
+        'national': 'si'
+    },
 ]
