@@ -6,5 +6,9 @@ export type newsDTO = {
     municipio?: string,
     date: string,
     tags: string[],
+    fakeNew: {
+      state: string,
+      link: string
+    }
   }
   
