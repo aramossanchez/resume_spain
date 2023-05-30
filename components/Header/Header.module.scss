@@ -9,7 +9,7 @@
         background-color: white;
         border: 1px solid var(--borderColorSoft);
         overflow-y: auto;
-        max-height: calc(var(--heightBody) - 10vh);
+        max-height: 0;
         >div {
             border-bottom: 1px solid var(--borderColor);
             padding: 1.2em 0.5em;
@@ -28,6 +28,8 @@
         >div {
             opacity: 1;
             font-size: 16px;
+            max-height: calc(var(--heightBody) - 10vh);
+            z-index: 3;
         }
     }
 }

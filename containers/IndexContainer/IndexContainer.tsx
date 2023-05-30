@@ -12,11 +12,11 @@ export default function IndexContainer() {
             <h1 className="font-bold text-4xl w-full text-center my-8">Todas las noticias</h1>
             <div className="w-full flex flex-row flex-wrap gap-[5%] gap-y-16 px-[5%] pb-14">
                 {newsList.map((news, index) => (
-                    <div key={index + 'new'} className="flex flex-col justify-between w-[30%] shadow-lg rounded-lg border-2 px-4 py-4">
+                    <div key={index + 'new'} className="flex flex-col justify-between w-[30%] shadow-lg rounded-lg border-2 px-4 py-4 gap-6 bg-slate-100">
                         <div className="flex flex-col gap-4">
                             <div className="flex flex-row flex-wrap gap-3">
                                 {news.fakeNew !== undefined &&
-                                    <div className="mb-2 px-5 py-2 rounded-lg bg-red-400 flex flex-row items-center gap-3">
+                                    <div className="mb-2 px-3 py-1 rounded-lg bg-red-400 flex flex-row items-center gap-3">
                                         <span className=" text-lg text-center font-semibold">BULO</span>
                                         <Link href={`/new/${news.fakeNew}`} className="text-center">
                                             <span className="underline font-semibold">LINK A LA NOTICIA</span>
@@ -24,7 +24,7 @@ export default function IndexContainer() {
                                     </div>
                                 }
                                 {news.organizations.map((organization, index2) => (
-                                    <span className={`mb-2 px-5 py-2 rounded-lg cursor-pointer
+                                    <span className={`px-3 py-1 rounded-lg cursor-pointer text-sm
                                 ${organization === 'Todos' ? ' bg-slate-500 text-white font-semibold' : ''}
                                 ${organization === 'Partido Popular' ? 'bg-blue-400 text-white font-semibold' : ''}
                                 ${organization === 'Partido Socialista Obrero Español' ? 'bg-red-500 font-semibold text-white' : ''}
@@ -34,38 +34,38 @@ export default function IndexContainer() {
                                     </span>
                                 ))}
                             </div>
-                            <span className=" text-2xl font-semibold">{news.title}</span>
-                            <span className=" opacity-50 text-sm">{news.date}</span>
                             {news.provincia &&
                                 <div>
-                                    <span className="cursor-pointer font-semibold bg-slate-200 px-5 py-2 rounded-lg">{news.provincia}</span>
+                                    <span className="text-sm cursor-pointer font-semibold bg-slate-300 px-3 py-1 rounded-lg">{news.provincia}</span>
                                 </div>
                             }
                             {news.municipio &&
                                 <div>
-                                    <span className="cursor-pointer font-semibold bg-slate-200 px-5 py-2 rounded-lg">Ayuntamiento de {news.municipio}</span>
+                                    <span className="text-sm cursor-pointer font-semibold bg-slate-300 px-3 py-1 rounded-lg">Ayuntamiento de {news.municipio}</span>
                                 </div>
                             }
                             {news.national &&
                                 <div>
-                                    <span className="cursor-pointer font-semibold bg-slate-200 px-5 py-2 rounded-lg">Nacional</span>
+                                    <span className="text-sm cursor-pointer font-semibold bg-slate-300 px-3 py-1 rounded-lg">Nacional</span>
                                 </div>
                             }
-                        </div>
-                        <div className="flex flex-col gap-4">
-                            <div className="flex flex-col items-start mt-4 gap-2">
-                                <Link href={news.link} target="_blank">
-                                    <span className=" text-blue-400 underline font-semibold text-lg">Link a la noticia</span>
-                                </Link>
-                                <span>({news.media})</span>
+                            <span className=" text-xl font-bold">{news.title}</span>
+                            <div className="flex flex-row items-center">
+                                <span className=" opacity-70 text-sm">{news.date}</span>
+                                <span className="opacity-70 text-sm"> - ({news.media})</span>
                             </div>
+                        </div>
+                        <div className="flex flex-col gap-3 mb-1">
                             {news.tags.length > 0 &&
                                 <div className="flex flex-row gap-3 flex-wrap">
                                     {news.tags.map((tag, index3) => (
-                                        <span key={`${tag}-${index3}`} className="cursor-pointer bg-black text-white py-1 px-3 rounded-md">#{tag}</span>
+                                        <span key={`${tag}-${index3}`} className=" text-xs cursor-pointer ">#{tag}</span>
                                     ))}
                                 </div>
                             }
+                            <Link href={news.link} target="_blank">
+                                <span className=" border-2 font-semibold text-slate-400 px-3 py-1 bg-white">Leer la noticia</span>
+                            </Link>
                         </div>
                     </div>
                 ))}

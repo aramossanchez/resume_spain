@@ -1,0 +1,21 @@
+export const autonomias = [
+    "Andalucía",
+    "Aragón",
+    "Asturias",
+    "Baleares",
+    "Canarias",
+    "Cantabria",
+    "Castilla-La Mancha",
+    "Castilla y León",
+    "Cataluña",
+    "Extremadura",
+    "Galicia",
+    "Madrid",
+    "Murcia",
+    "Navarra",
+    "País Vasco",
+    "La Rioja",
+    "Comunidad Valenciana",
+    "Ceuta",
+    "Melilla"
+];

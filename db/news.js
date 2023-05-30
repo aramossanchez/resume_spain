@@ -62,12 +62,12 @@ export const news =
     },
     {
         'id': '6',
-        'title': 'Dimite el número tres del PSOE andaluz y secretario de Organización, Noel López, por el caso Maracena',
-        'link': 'https://www.rtve.es/noticias/20230530/secretario-organizacion-psoe-andaluz-dimite-defenderse-caso-maracena/2447985.shtml',
+        'title': 'Sánchez anuncia la disolución de las Cortes y la convocatoria de elecciones anticipadas el 23 de julio',
+        'link': 'https://www.publico.es/politica/sanchez-anuncia-disolucion-cortes-convocatoria-elecciones-anticipadas.html',
         'organizations': ['Partido Socialista Obrero Español'],
-        'date': '30/05/2023',
-        'tags': ['Casos de corrupción política'],
-        'media': 'RTVE',
+        'date': '29/05/2023',
+        'tags': ['Elecciones'],
+        'media': 'Público',
         'national': 'si'
-    },
+    }
 ]

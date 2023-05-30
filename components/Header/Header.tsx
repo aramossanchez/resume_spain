@@ -5,7 +5,7 @@ import style from './Header.module.scss';
 
 export default function Header() {
 
-    const { provinciasList } = UseHeader();
+    const { provinciasList, autonomiasList } = UseHeader();
 
     return (
         <main className="w-full h-[--heightHeader] bg-slate-200 flex flex-row items-center justify-end px-5 shadow-sm">
@@ -26,6 +26,14 @@ export default function Header() {
                     <div className="absolute w-auto top-12 flex flex-col items-start justify-start">
                         <div>Público</div>
                         <div>elDiario.es</div>
+                    </div>
+                </div>
+                <div className={style.link_container}>
+                    <span>Autonomías</span>
+                    <div className="absolute w-auto top-12 flex flex-col items-start justify-start font-normal">
+                        {autonomiasList.map((autonomia, index) => (
+                            <div key={`${autonomia}-${index}`}>{autonomia}</div>
+                        ))}
                     </div>
                 </div>
                 <div className={style.link_container}>
