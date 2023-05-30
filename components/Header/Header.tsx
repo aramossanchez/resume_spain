@@ -21,6 +21,13 @@ export default function Header() {
                     </div>
                 </div>
                 <div className={style.link_container}>
+                    <span>Medios</span>
+                    <div className="absolute w-auto top-12 flex flex-col items-start justify-start">
+                        <div>Público</div>
+                        <div>elDiario.es</div>
+                    </div>
+                </div>
+                <div className={style.link_container}>
                     <span>Provincias</span>
                     <div className="absolute w-auto top-12 flex flex-col items-start justify-start font-normal">
                         {provinciasList.map((provincia, index) => (

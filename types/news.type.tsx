@@ -9,6 +9,7 @@ export type newsDTO = {
     fakeNew: {
       state: string,
       link: string
-    }
+    },
+    media: string
   }
   

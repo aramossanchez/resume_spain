@@ -13,21 +13,24 @@ export default function IndexContainer() {
             <div className="w-full flex flex-row flex-wrap gap-[5%] gap-y-16 px-[5%]">
                 {newsList.map((news, index) => (
                     <div key={index + 'new'} className="flex flex-col w-[30%] gap-4 shadow-lg rounded-lg border-2 px-4 py-4">
-                        {news.fakeNew.state === 'yes' &&
-                            <div className="bg-red-400 flex flex-col w-full py-2">
-                                <span className=" text-lg text-center font-semibold">BULO</span>
-                                <Link href={''} className="text-center">
-                                    <span className="underline font-semibold">LINK A LA NOTICIA QUE LO DEMUESTRA</span>
-                                </Link>
-                            </div>
-                        }
-                        <div className="flex flex-row flex-wrap">{news.organizations.map((organization, index2) => (
-                            <span className={`mb-2 px-5 py-2 rounded-lg cursor-pointer
-                            ${organization === 'Partido Popular' ? 'bg-blue-400 text-white font-semibold' : ''}
-                            ${organization === 'Partido Socialista Obrero Español' ? 'bg-red-300 font-semibold' : ''}
-                            ${organization === 'Vox' ? 'bg-green-400 font-semibold' : ''}
-                            `} key={`${organization}-${index2}`}>{organization}</span>
-                        ))}
+                        <div className="flex flex-row flex-wrap gap-3">
+                            {news.fakeNew.state === 'yes' &&
+                                <div className="mb-2 px-5 py-2 rounded-lg bg-red-400 flex flex-row items-center gap-3">
+                                    <span className=" text-lg text-center font-semibold">BULO</span>
+                                    <Link href={''} className="text-center">
+                                        <span className="underline font-semibold">LINK A LA NOTICIA</span>
+                                    </Link>
+                                </div>
+                            }
+                            {news.organizations.map((organization, index2) => (
+                                <span className={`mb-2 px-5 py-2 rounded-lg cursor-pointer
+                                ${organization === 'Partido Popular' ? 'bg-blue-400 text-white font-semibold' : ''}
+                                ${organization === 'Partido Socialista Obrero Español' ? 'bg-red-300 font-semibold' : ''}
+                                ${organization === 'Vox' ? 'bg-green-400 font-semibold' : ''}
+                                `} key={`${organization}-${index2}`}>
+                                    {organization}
+                                </span>
+                            ))}
                         </div>
                         <span className=" text-2xl font-semibold">{news.title}</span>
                         <span className=" opacity-50 text-sm">{news.date}</span>
@@ -41,9 +44,12 @@ export default function IndexContainer() {
                                 <span className="cursor-pointer font-semibold bg-slate-200 px-5 py-2 rounded-lg">Ayuntamiento de {news.municipio}</span>
                             </div>
                         }
-                        <Link href={news.link} target="_blank" className=" mt-4">
-                            <span className=" text-blue-400 underline font-semibold text-lg">Link a la noticia</span>
-                        </Link>
+                        <div className="flex flex-col items-start mt-4 gap-2">
+                            <Link href={news.link} target="_blank">
+                                <span className=" text-blue-400 underline font-semibold text-lg">Link a la noticia</span>
+                            </Link>
+                            <span>({news.media})</span>
+                        </div>
                     </div>
                 ))}
             </div>

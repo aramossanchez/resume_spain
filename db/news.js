@@ -11,7 +11,8 @@ export const news =
         'fakeNew': {
             'state': 'no',
             'link': ''
-        }
+        },
+        'media': 'Público'
     },
     {
         'id': '2',
@@ -25,6 +26,7 @@ export const news =
         'fakeNew': {
             'state': 'yes',
             'link': '1'
-        }
+        },
+        'media': 'elDiario.es'
     }
 ]
