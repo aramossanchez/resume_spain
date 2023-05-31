@@ -5,7 +5,7 @@ export const news =
         'title': 'Resultados de las Elecciones Municipales 2023',
         'link': 'https://www.publico.es/resultados-elecciones/municipales/2023/',
         'organizations': ['Todos'],
-        'date': '2023/05/30 22:00',
+        'date': '2023/05/29 00:00',
         'tags': ['Elecciones'],
         'media': 'Público',
         'national': 'si'
@@ -65,7 +65,7 @@ export const news =
         'title': 'Sánchez anuncia la disolución de las Cortes y la convocatoria de elecciones anticipadas el 23 de julio',
         'link': 'https://www.publico.es/politica/sanchez-anuncia-disolucion-cortes-convocatoria-elecciones-anticipadas.html',
         'organizations': ['Partido Socialista Obrero Español'],
-        'date': '2023/05/29',
+        'date': '2023/05/29 22:00',
         'tags': ['Elecciones'],
         'media': 'Público',
         'national': 'si'
