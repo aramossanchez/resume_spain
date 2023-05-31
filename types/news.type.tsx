@@ -4,7 +4,7 @@ export type newsDTO = {
     organizations: string[],
     autonomia?: string,
     provincia?: string,
-    municipio?: string,
+    alcaldia?: string,
     date: string,
     tags: string[],
     fakeNew?: string

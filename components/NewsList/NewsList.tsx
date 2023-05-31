@@ -39,7 +39,7 @@ export default function NewList({newsList}: {newsList: newsDTO[]}) {
               </div>
               {news.autonomia &&
                 <div>
-                  <span className="text-sm cursor-pointer font-semibold bg-slate-300 px-3 py-1 rounded-lg">{news.autonomia}</span>
+                  <span className="text-sm cursor-pointer font-semibold bg-slate-300 px-3 py-1 rounded-lg">Junta de {news.autonomia}</span>
                 </div>
               }
               {news.provincia &&
@@ -47,9 +47,9 @@ export default function NewList({newsList}: {newsList: newsDTO[]}) {
                   <span className="text-sm cursor-pointer font-semibold bg-slate-300 px-3 py-1 rounded-lg">{news.provincia}</span>
                 </div>
               }
-              {news.municipio &&
+              {news.alcaldia &&
                 <div>
-                  <span className="text-sm cursor-pointer font-semibold bg-slate-300 px-3 py-1 rounded-lg">Ayuntamiento de {news.municipio}</span>
+                  <span className="text-sm cursor-pointer font-semibold bg-slate-300 px-3 py-1 rounded-lg">Ayuntamiento de {news.alcaldia}</span>
                 </div>
               }
               {news.national &&
