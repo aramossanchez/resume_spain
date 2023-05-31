@@ -2,6 +2,7 @@ export type newsDTO = {
     title: string,
     link: string,
     organizations: string[],
+    autonomia?: string,
     provincia?: string,
     municipio?: string,
     date: string,

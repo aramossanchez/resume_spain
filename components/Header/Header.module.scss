@@ -20,6 +20,16 @@
                 background-color: var(--borderColorSoft);
             }
         }
+        >a {
+            border-bottom: 1px solid var(--borderColor);
+            padding: 1.2em 0.5em;
+            width: 100%;
+            cursor: pointer;
+            &:hover {
+                transition: 0.2s ease-in-out;
+                background-color: var(--borderColorSoft);
+            }
+        }
         >div:last-child {
             border-bottom: none;
         }

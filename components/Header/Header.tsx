@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import { UseHeader } from './Header.hook';
 import style from './Header.module.scss';
 
@@ -13,12 +14,18 @@ export default function Header() {
                 <div className={style.link_container}>
                     <span>Partidos políticos</span>
                     <div className="absolute w-auto top-12 flex flex-col items-start justify-start">
-                        <div>Partido Popular (PP)</div>
-                        <div>Partido Socialista Obrero Español (PSOE)</div>
-                        <div>Ciudadanos (C)</div>
-                        <div>Unidas Podemos (UP)</div>
-                        <div>Izquierda Unida (IU)</div>
-                        <div>Todos</div>
+                        <Link href="/organization/Partido Popular">
+                            <span>Partido Popular (PP)</span>
+                        </Link>
+                        <Link href="/organization/Partido Socialista Obrero Español">
+                            <span>Partido Socialista Obrero Español (PSOE)</span>
+                        </Link>
+                        <Link href="/organization/Movimiento Sumar">
+                            <span>Movimiento Sumar</span>
+                        </Link>
+                        <Link href="/organization/Todos">
+                            <span>Todos</span>
+                        </Link>
                     </div>
                 </div>
                 <div className={style.link_container}>

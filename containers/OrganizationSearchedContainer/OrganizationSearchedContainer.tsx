@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { UseOrganizationSearchedContainer } from "./OrganizationSearchedContainer.hook";
+import NewsList from "../../components/NewsList/NewsList";
 
 export default function OrganizationSearchedContainer({ organization }: { organization: string }) {
 
@@ -14,11 +15,8 @@ export default function OrganizationSearchedContainer({ organization }: { organi
 
   return (
     <div>
-      {newsList.map((news, index) => {
-        return (
-          <span key={index}>{news.title}</span>
-        )
-      })}
+    <h1 className="font-bold text-4xl w-full text-center my-8">Noticias sobre {organizationToSearch}</h1>
+      <NewsList newsList={newsList} />
     </div>
   )
 }
