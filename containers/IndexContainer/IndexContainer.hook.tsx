@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { getNewsFromApi } from "@/services/NewsList.service";
 import { newsDTO } from "@/types/news.type";
+import { getOrderedNews } from "@/services/OrderedNews.service";
 
 export function UseIndexContainer() {
 
@@ -16,7 +17,8 @@ export function UseIndexContainer() {
   const getNews = async () => {
     try {
       const news = await getNewsFromApi();
-      setNewsList(news);
+      const orderedNews = await getOrderedNews(news);
+      setNewsList(orderedNews);
     } catch (error) {
       console.error(error);
     }
