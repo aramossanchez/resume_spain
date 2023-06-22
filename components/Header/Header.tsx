@@ -7,7 +7,10 @@ import style from './Header.module.scss';
 export default function Header() {
 
   const { provinciasList, autonomiasList, mediosList } = UseHeader();
-
+//TODO - BARRAS LATERALES CON CSS
+//TODO - PARTIDOS POLÍTICOS DESDE BD
+//TODO - DESPLEGABLES DEL HEADER HACIA LA DERECHA
+//TODO - LOGO
   return (
     <main className="w-full h-[--heightHeader] bg-gradient-to-b from-slate-400 to-slate-200 flex flex-row items-center justify-end px-5 shadow-sm sticky top-0 z-10">
       <article className="text-lg font-semibold flex flex-row items-center justify-end gap-5">

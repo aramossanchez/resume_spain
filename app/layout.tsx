@@ -1,5 +1,4 @@
 import Header from '@/components/Header/Header';
-import IndexContainer from '@/containers/IndexContainer/IndexContainer';
 import '../styles/variables.scss';
 import '../styles/globals.scss';
 

@@ -4,7 +4,8 @@ import Link from "next/link";
 import { newsDTO } from '@/types/news.type';
 
 export default function NewList({newsList}: {newsList: newsDTO[]}) {
-
+//TODO - AÑADIR PAGINACIÓN
+//TODO - CREAR COMO COMPONENTE DE NOTICIA INDIVIDUAL, Y HACER EL MAP EN EL CONTAINER
   return (
     <div className="w-full flex flex-row flex-wrap gap-[5%] gap-y-16 px-[5%] pb-14">
       {newsList.map((news, index) => {

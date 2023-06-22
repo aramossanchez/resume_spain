@@ -1,6 +1,10 @@
 import { getNewsByOrganizationFromApi } from "@/services/NewsList.service";
 import { newsDTO } from "@/types/news.type";
 import { useEffect, useState } from "react";
+// TODO - CONTAINER DE MEDIOS
+// TODO - CONTAINER DE AUTONOMÍAS
+// TODO - CONTAINER DE PROVINCIAS
+// TODO - CONTAINER DE ALCALDÍAS
 
 export function UseOrganizationSearchedContainer() {
   

@@ -1,4 +1,4 @@
-import IndexContainer from '@/containers/IndexContainer/IndexContainer';
+import IndexContainer from '@/containers/IndexContainer/IndexContainer.container';
 
 export default function Home() {
 

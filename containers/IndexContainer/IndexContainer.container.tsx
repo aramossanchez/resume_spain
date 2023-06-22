@@ -1,6 +1,6 @@
 "use client";
 
-
+//TODO - FILTRADO
 import 'dayjs/locale/es';
 import { UseIndexContainer } from "./IndexContainer.hook";
 import NewsList from "../../components/NewsList/NewsList";
