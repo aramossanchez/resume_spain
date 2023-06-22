@@ -278,7 +278,7 @@ export const news =
         'date': '2023/06/01',
         'autonomia': 'Castilla y León',
         'tags': ['Sanidad', 'Medio ambiente'],
-        'media': '',
+        'media': 'Público',
     },
     {
         'id': '28',
