@@ -31,6 +31,7 @@ export default function NewList({newsList}: {newsList: newsDTO[]}) {
                       ${organization === 'Unidas Podemos' ? 'bg-purple-400 text-white font-semibold' : ''}
                       ${organization === 'Movimiento Sumar' ? 'bg-slate-200 font-semibold text-red-400' : ''}
                       ${organization === 'Caminando Juntos' ? 'bg-red-500 font-bold text-blue-700' : ''}
+                      ${organization === 'EH Bildu' ? 'bg-white font-semibold text-green-400' : ''}
                       `} key={`${organization}-${index2}`}>
                       {organization}
                     </span>

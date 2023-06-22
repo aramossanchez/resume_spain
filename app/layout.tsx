@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className='w-full h-full flex flex-col items-start justify-start'>
         <Header />
-        <section className='w-full h-[--heightBody]'>
+        <section className='w-full h-[--heightBody]  overflow-y-scroll'>
           {children}
         </section>
         </body>

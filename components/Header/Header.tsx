@@ -9,7 +9,7 @@ export default function Header() {
     const { provinciasList, autonomiasList } = UseHeader();
 
     return (
-        <main className="w-full h-[--heightHeader] bg-slate-200 flex flex-row items-center justify-end px-5 shadow-sm">
+        <main className="w-full h-[--heightHeader] bg-gradient-to-b from-slate-400 to-slate-200 flex flex-row items-center justify-end px-5 shadow-sm sticky top-0 z-10">
             <article className="text-lg font-semibold flex flex-row items-center justify-end gap-5">
                 <div className={style.link_container}>
                     <span>Partidos políticos</span>
@@ -22,6 +22,18 @@ export default function Header() {
                         </Link>
                         <Link href="/organization/Movimiento Sumar">
                             <span>Movimiento Sumar</span>
+                        </Link>
+                        <Link href="/organization/Unidas Podemos">
+                            <span>Unidas Podemos (UP)</span>
+                        </Link>
+                        <Link href="/organization/Vox">
+                            <span>Vox</span>
+                        </Link>
+                        <Link href="/organization/EH Bildu">
+                            <span>EH Bildu</span>
+                        </Link>
+                        <Link href="/organization/Caminando Juntos">
+                            <span>Caminando Juntos</span>
                         </Link>
                         <Link href="/organization/Todos">
                             <span>Todos</span>
